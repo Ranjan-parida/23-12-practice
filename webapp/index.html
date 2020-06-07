@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script id="sap.ui.bootstrap" 
+		        src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js" 
+		        data-sap-ui-libs="sap.ui.commons , sap.ui.table , sap.m"
+		        data-sap-ui-theme="sap_bluecrystal"
+		        data-sap-ui-resourceroots='{
+		        	"crazy":"./"
+		        }'
+		        data-sap-ui-xx-bindingSyntax = "complex">
+		</script>
+		
+		<script>
+                var oView = new sap.ui.view({
+                    id: "idMain",
+                    type: "JS",
+                    viewName: "crazy.view.Main"
+                });
+                oView.placeAt("myContent");
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<div id="myContent"></div>
+	</body>
+</html>
